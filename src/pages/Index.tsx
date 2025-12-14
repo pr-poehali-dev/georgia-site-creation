@@ -43,6 +43,14 @@ const landmarks = [
     x: 30,
     y: 35,
     type: 'mountain'
+  },
+  {
+    id: 6,
+    name: 'Поти',
+    description: 'Древний портовый город на Чёрном море',
+    x: 25,
+    y: 58,
+    type: 'port'
   }
 ];
 
@@ -58,6 +66,10 @@ const sections = {
       {
         period: 'Золотой век',
         description: 'XII век - эпоха царицы Тамары. Расцвет культуры, искусства и литературы. Создание "Витязя в тигровой шкуре".'
+      },
+      {
+        period: 'История Поти',
+        description: 'Поти - древний портовый город на месте античного Фасиса. Здесь согласно легенде аргонавты искали золотое руно. С XIX века - важнейший черноморский порт Грузии.'
       },
       {
         period: 'Современность',
@@ -201,7 +213,7 @@ export default function Index() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mt-6">
+              <div className="grid grid-cols-2 md:grid-cols-6 gap-3 mt-6">
                 {landmarks.map((landmark) => (
                   <button
                     key={landmark.id}
